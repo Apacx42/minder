@@ -15,63 +15,50 @@
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
-            <div class="result">
-              <div class="result__title field-title">
-                 Generate Password
-              </div>    
-              <div class="result__info right">
-                click to copy
+            <button class="button">Generate a Password</button>
+            <input type="text" id="display" readonly>        
+            <div class="slidecontainer">
+              <input type="range" min="8" max="128"
+                value="60" class="slider" id="myRange">
+                    <p>
+                      Value: <span id="style"></span>
+                    </p>
               </div>
-              <div class="result__info left">
-                copied
-              </div>
-              <div class="result__veiwbox" id="result">
-                Click Generate
-              <button id="copy-btn" style="--x: 0; --y: 0">
-                <i class="far fa-copy"></i>
-              </button>
-            </div>
-            <div class="card-body">
-              <div class="label range__slider" data-min="8" data-max="128">
-                <div class="length__title field-title"
-                  data-length="0">
-                    length:
-                </div>
-                <input type="range" id="slider" min="8" max="40" value="20">
-              </div>
+            </div>  
+            <div class="container">  
               <div class="setting">
-                <span.setting__title.field-title">
-                    setting
-                </span.setting__title.field-title>    
+                <h3>Settings</h3>    
               </div>
-              </div>   
-                <div class="setting" 
-                  label for="uppercase">Use uppercase letters</label>
-                  <input type="color" id="uppercase" change color>
-                </div>  
-                  <br /> <br />
-                <div class="setting"  
-                  label for="lowercase">Use lowercase letter</label>
-                  <input type="color" id="lowercase" change color>
-                </div>  
-                  <br /> <br />
-                <div class="setting"  
-                  label for="number">Use a number</label>
-                  <input type="color" id="number" change color>
-                </div>  
-                  <br /> <br />
-                <div class="setting"  
-                  label for="symbol">Use a symbol</label>
-                  <input type="color" id="symbol" change color>
-                </div>  
-                </div>  
-              </div>
-            </div>    
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
+            </div>   
+            <div class="setting" 
+              label for="uppercase">Use uppercase letters</label>  
+              <input type="radio" id="uppercase" value="uppercase">
+            </div>  
+              <br /> 
+            <div class="setting"  
+              label for="lowercase">Use lowercase letter</label>
+              <input type="radio" id="lowercase" value="lowercase">
+            </div>  
+              <br /> 
+            <div class="setting"  
+              label for="number">Use a number</label>
+              <input type="radio" id="number" value="number">
+            </div>  
+              <br /> 
+            <div class="setting"  
+              label for="symbol">Use a symbol</label> 
+              <input type="radio" id="symbol" value="symbol">
+              <br /><br />
+            </div>  
+          </div>
+        </div>     
       </div>
+    </div>    
+    <div class="card-footer">
+      <input type="submit" value="Generate Password">
     </div>
-    <script src="script.js"></script>
+  </div>
+  </div>
+  <script src="script.js"></script>
   </body>
 </html>
